@@ -1,8 +1,0 @@
-pip install fastapi
-pip install psycopg2-binary (banco)
-pip install "passlib[bcrypt]"
-pip install "python-jose[cryptography]"
-pip install uvicorn
-pip install python-multipart
-pip install SQLAlchemy
-pip install pydantic[email]
