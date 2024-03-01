@@ -14,6 +14,7 @@ async def criar_pedidos(pedido: Pedidos, db: db_dependency, user: logado):
         novo_pedido = models.Pedidos(mesa=pedido.mesa, status="Iniciado para a cozinha", finalizado=False, funcionarios_matricula=user.get('id'))  # Corrigido aqui
         db.add(novo_pedido)
         db.commit()
+        db.refresh(novo_pedido)
 
         return {'mensagem': "Novo pedido repassado a cozinha com sucesso", "pedido": novo_pedido}
 
