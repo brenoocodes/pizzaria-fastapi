@@ -4,6 +4,7 @@ from src.routes.categorias.index import *
 from src.routes.produtos.index import *
 from src.routes.pedidos.post import *
 from src.routes.pedidos.get import *
+from src.routes.pedidos.delete import *
 from src.config.login import *
 
 # if __name__ == "__main__":
